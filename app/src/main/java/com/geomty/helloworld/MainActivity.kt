@@ -4,23 +4,23 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.graphics.Color
-import android.widget.TextView
-import android.widget.Button
+import com.geomty.helloworld.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val text : TextView = findViewById(R.id.textView)
-        val button: Button = findViewById(R.id.button)
-
-        button.setOnClickListener {
-            text.setTextColor(Color.parseColor("#${makeColor()}${makeColor()}${makeColor()}"))
+        binding.tapMeButton.setOnClickListener {
+            binding.helloWorldText.setTextColor(Color.parseColor("#${makeColor()}${makeColor()}${makeColor()}"))
         }
     }
     private fun makeColor(): String {
-        var hex = Integer.toHexString((1..255).random())
+        val hex = Integer.toHexString((1..255).random())
         if (hex.length == 1) {
             return "0${hex}"
         }
