@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="blue">#ccf5ff</color>
+    <!-- #ccf5ff -->
+    <color name="blue">#a4eeff</color>
+    <color name="blue_dark">#001f25</color>
     <color name="blue_light">#e6faff</color>
-    <color name="blue_dark">#667a80</color>
-    <color name="grey">#bfbfbf</color>
+    <color name="blue_darker">#03d5f6</color>
+    <!-- ffd6cc -->
+    <color name="orange">#ffdbd2</color>
+    <color name="orange_dark">#3c0800</color>
+    <color name="orange_darker">#ff7e60</color>
 </resources>
