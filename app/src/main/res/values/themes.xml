@@ -8,7 +8,9 @@
         <item name="colorSecondaryVariant">@color/orange_darker</item>
         <item name="colorOnSecondary">@color/orange_dark</item>
 
+        <item name="android:background">@color/blue_light</item>
         <item name="android:statusBarColor">?attr/colorSecondaryVariant</item>
+        <item name="android:navigationBarColor">?attr/android:background</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
     </style>
