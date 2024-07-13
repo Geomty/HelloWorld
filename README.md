@@ -1,4 +1,4 @@
 # HelloWorld
-All it does is change the text colour
+All it does is change the text colour.
 
 ![Screenshot](screenshot.jpg)
